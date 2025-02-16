@@ -49,7 +49,7 @@ const SoundGraph = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("https://esp32-api-sound-analyzer.onrender.com/audio"); // Flask API URL
+        const response = await fetch("https://dstethoscopecore.onrender.com/audio"); // Flask API URL
         const data = await response.json();
         const formattedData = data.time.map((time, index) => ({
           time,
